@@ -59,9 +59,11 @@ and put the `tabs` block in a 42px row with the button after it:
 
 ### In Herdr Glass
 
-[Herdr Glass](https://github.com/noah4520/herdr-glass) already has the row. Add the board
-block as above, and put the button after `tab-strip` in its `tabs` row, with Glass's rounder
-pill and no divider line:
+[Herdr Glass](https://github.com/noah4520/herdr-glass) needs no restructuring: its tab bar
+is already a row (`tabs`) holding the tab strip (`tab-strip`), with room left after it for
+buttons like this one, and its tab bar mod makes space for them. Add the board block as
+above, then add the button block to the `tabs` row, right after `tab-strip`. Use Glass's
+rounder pill and leave out the divider line, which Glass's tab bar doesn't have:
 
 ```json
 { "id": "snake-button", "type": "block", "size": { "px": 79 }, "window_drag": true,
